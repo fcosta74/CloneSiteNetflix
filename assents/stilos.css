@@ -137,8 +137,7 @@ header{
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color: #FFFFFF;
-    font-family: 'Netiflix Sans', sans-serif;
+
 }
 .texto h2{
     text-align: center;
@@ -159,8 +158,7 @@ header{
     text-align: center;
     font-size: 19px;
     padding: 10px;
-    color: #FFFFFF;
-    font-family: 'NetiflixSans-Regular', sans-serif;
+
 }
 .form{
     display: flex;
@@ -216,13 +214,11 @@ header{
     font-size: 3.125rem;
     font-weight: 600;
     margin: 10px 0px;
-    font-family: 'NetiflixSans-Medium', sans-serif;
     
 }
 .divs__sub__titulo{
     font-size: 1.625rem; 
     font-weight: 400;
-    font-family: 'NetiflixSans-Regular', sans-serif;
 }
 
 .divs__img__container{
