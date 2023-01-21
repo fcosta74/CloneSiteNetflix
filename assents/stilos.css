@@ -1,12 +1,9 @@
 @font-face {
-    font-family:'Netflix Sans-black';
+    font-family:'Netflix Sans';
     src: url('font/NetflixSans-Black.otf');
-    font-family:'Netflix Sans-regular';
-    src: url('font/NetflixSans-Regular.otf');
-    font-family:'Netflix Sans-medium';
-    src: url('font/NetflixSans-Medium.otf');
-    font-family:'Netflix Sans-bold';
-    src: url('font/NetflixSans-Bold.otf');
+
+    font-weight:normal ;
+    font-style: normal;
 }
 *{   
     margin: 0;
@@ -15,6 +12,7 @@
 }
 body{
     background-color: #000000;
+    font-family: "Netflix Sans" ,sans-serif;
     color: white;
 }
 
@@ -93,7 +91,7 @@ header{
     margin-top: 20px;
     font-size: 17px;
     color: #333333;
-    font-family: 'NetiflixSans-medium';
+    font-family: 'NetiflixSans-Regular', sans-serif;
     
 }
 .btni{
@@ -140,7 +138,7 @@ header{
     font-size: 50px;
     font-weight: bold;
     color: #FFFFFF;
- 
+    font-family: 'Netiflix Sans', sans-serif;
 }
 .texto h2{
     text-align: center;
@@ -162,6 +160,7 @@ header{
     font-size: 19px;
     padding: 10px;
     color: #FFFFFF;
+    font-family: 'NetiflixSans-Regular', sans-serif;
 }
 .form{
     display: flex;
