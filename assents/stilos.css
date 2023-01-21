@@ -1,7 +1,12 @@
 @font-face {
-    font-family:'Netflix Sans';
-    src: url('font/NetflixSans-Black.otf');
-
+    font-family:'Netflix Sans-black';
+    src: url('font/NetflixSans-Black.otf') format('opentype');
+    font-family: 'Netflix Sans-bold';
+    src: url('font/NetflixSans-Bold.otf') format('opentype');
+    font-family: 'Netflix Sans-medium';
+    src:url('font/NetflixSans-Medium.otf') format('opentype');
+    font-family: 'Netflix Sans-regular';
+    src:url('font/NetflixSans-Regular.otf') format('opentype');
     font-weight:normal ;
     font-style: normal;
 }
@@ -12,8 +17,8 @@
 }
 body{
     background-color: #000000;
-    font-family: "Netflix Sans" ,sans-serif;
     color: white;
+    font-family: 'Netiflix Sans', sans-serif;
 }
 
 .barrasup {
@@ -137,28 +142,27 @@ header{
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-
+    font-family: 'Netflix Sans-medium', sans-serif;
 }
 .texto h2{
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: black;
-    
+    font-family: 'Netflix Sans-medium', sans-serif;    
 }
 .texto h3{
     text-align: center;
     font-size: 26px;
     padding: 10px;
     color: #FFFFFF;
-    
+    font-family: 'Netflix Sans-regular', sans-serif;
 }
 .texto h4{
     text-align: center;
     font-size: 19px;
     padding: 10px;
-
+    font-family: 'Netflix Sans-regular', sans-serif;
 }
 .form{
     display: flex;
@@ -324,6 +328,7 @@ footer {
     margin: 0 auto;
     width: 85%;
     gap: 20px;
+    font-family: 'Netflix Sans-regular', serif;
 }
 
 .topo1{
@@ -349,6 +354,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-bottom: 1rem;
+    
 }
 .topo4{
     margin-top: 1rem;
@@ -407,16 +413,19 @@ span > .dropdown_container > .linguagem_drop_down {
 }
 .acordo{
     width: 100%;
+    font-family: 'Netflix Sans-regular', serif;
+    font-size: 26px;
 }
 .list_container{
     border-top: 8px solid #222;
     padding: 2rem 5rem 6rem 0;
 }
 .cabeça{
-    font-size: 20px;
+    font-size: 50px;
     text-align: center;
     font-weight: 600;
     margin: 1rem 3rem;
+    font-family: 'Netflix Sans-medium', serif;
 }
 
 .list{
