@@ -18,7 +18,7 @@
 body{
     background-color: #000000;
     color: white;
-    font-family: 'Netiflix Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .barrasup {
@@ -141,28 +141,30 @@ header{
 .texto h1{
     text-align: center;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: medium;
     font-family: 'Netflix Sans-medium', sans-serif;
 }
 .texto h2{
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: regular;
     font-family: 'Netflix Sans-medium', sans-serif;    
 }
 .texto h3{
     text-align: center;
     font-size: 26px;
     padding: 10px;
-    color: #FFFFFF;
+    font-weight: regular;
     font-family: 'Netflix Sans-regular', sans-serif;
 }
 .texto h4{
     text-align: center;
     font-size: 19px;
     padding: 10px;
+    font-weight: regular;
     font-family: 'Netflix Sans-regular', sans-serif;
+
 }
 .form{
     display: flex;
@@ -329,6 +331,7 @@ footer {
     width: 85%;
     gap: 20px;
     font-family: 'Netflix Sans-regular', serif;
+    font-weight: regular;
 }
 
 .topo1{
@@ -413,8 +416,10 @@ span > .dropdown_container > .linguagem_drop_down {
 }
 .acordo{
     width: 100%;
+    font-weight: regular;
     font-family: 'Netflix Sans-regular', serif;
     font-size: 26px;
+    color: #FFFFFF;
 }
 .list_container{
     border-top: 8px solid #222;
@@ -425,6 +430,7 @@ span > .dropdown_container > .linguagem_drop_down {
     text-align: center;
     font-weight: 600;
     margin: 1rem 3rem;
+    font-weight: medium;
     font-family: 'Netflix Sans-medium', serif;
 }
 
@@ -443,13 +449,13 @@ span > .dropdown_container > .linguagem_drop_down {
     font-size: 18px;
     background-color: #303030;
     border: 1px solid #303030;
-    color: white;
+    color: #FFFFFF;
 }
 .visib{
     background-color: #303030;
     border-top: 1px solid black;
     max-height: 0;
-     overflow: hidden;
+    overflow: hidden;
     transition: max-height 0.5s ease-in-out;
 }
 .visib > p{
