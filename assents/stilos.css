@@ -8,6 +8,33 @@ body{
     font-family: "Netflix Sans" ,sans-serif;
     color: white;
 }
+.barrasup {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+  z-index: 10;
+} 
+.item1 {
+    gap: 10px;
+    width: 100px;
+  
+}
+.logo {
+    height: 40px;
+    max-width: 100%;
+    margin-top: 2rem;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    color: whitesmoke;
+}
+
 .linguagem_drop_down{
     background: transparent;
     border: none;
@@ -16,7 +43,28 @@ body{
 .linguagem_drop_down:focus{
     outline: none;
 }
-
+.dropdown_container1{
+    margin-top: 2rem;
+    max-width: 100%;
+    height: 40px;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    float: left;
+    width: fit-content;
+}
+.dropdown_container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+}
 .dropdown_container {
     border: 1px solid white;
     padding: 0.4rem;
@@ -28,10 +76,8 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 0px;
-    height: 60px;
-    
+    height: 3.5rem;
 }
-
 .acima{
     text-align: center;
     margin-top: 20px;
@@ -40,10 +86,7 @@ header{
     font-family: 'NetiflixSans-Regular', sans-serif;
     
 }
-
-
 .btni{
-    width: 190px;
     border-style: none;
     cursor: pointer;
     color: #0071eb;
@@ -51,27 +94,22 @@ header{
     font-size: 16px;
     justify-content: center;
     background: transparent;
-    width: 180px;
     border: 0;
 }
 
-main .container{
+.container{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-repeat: no-repeat;
     background-image: url('imagens/fundo.jpeg');
-
+    margin-top: 0
 }
+
 .texto{
     margin-top: 15vh;
     top: 50%;
     left: 50%;
     
-}
-.logo{
-    height: 40px;
-    max-width: 100%;
-    margin: 30px 40px;
 }
 .inp{
     margin: 30px 5px;
@@ -89,7 +127,6 @@ main .container{
 
 .texto h1{
     text-align: center;
-    margin-top: 40px;
     font-size: 50px;
     font-weight: bold;
     color: #FFFFFF;
@@ -122,7 +159,7 @@ main .container{
     justify-content: center;
     margin-top: 20px;
     height: 60px;
-    margin-bottom: 100px;
+   
 }
 .email{
     width: 435px;
@@ -132,12 +169,17 @@ main .container{
     opacity: 0.6;
 }
 .btn2{
-    width: 180px;
+    width: 120px;
     background-color: #e50914;
     border: 0;
-    font-size: 30px;
+    font-size: 1.2rem;
     cursor: pointer;
     color: #FFFFFF;
+    vertical-align: top;
+    align-items: center;
+}
+.dropdown_container1{
+    float: left;
 }
 
 .btn1{
@@ -189,6 +231,11 @@ main .container{
 }
 .divs__backgroud__video__container{
     position: absolute;
+}
+
+
+.divs__backgroud__video__container{
+    position: absolute;
     width: 100%;
     top: 20%;
     left: 13%;
@@ -197,6 +244,7 @@ main .container{
     max-height: 54%;
     z-index: -2;
 }
+
 
 .divs__2__backgroud__video__container{
     position: absolute;
@@ -258,15 +306,12 @@ main .container{
     width: 100%;
     height: 100%;
 }
-.list_container{
-    border-top: 8px solid #222;
-    padding: 2rem 5rem 6rem 0;
-}
+
 footer {
     border-top: 8px solid #222;
     padding: 2rem 1rem;   
     color: #757575;
-
+    gap: 20px;
 }
 .footer_site{
     padding-top: 0;
@@ -299,6 +344,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
+    margin-bottom: 1rem;
+}
+.topo4{
+    margin-top: 1rem;
 }
 li{
     line-height: 1.9;
@@ -315,10 +364,91 @@ li a{
     color: #757575;
     cursor: pointer;
 }
+.linguagemdrop{
+    color: #757575;
+    background-color: transparent;
+    border: 1px solid #757575; 
+    cursor: pointer;
+    border: transparent;
+    margin-top: 1rem;
+    margin: 30px 40px;
+    float: right;
+    max-width: 100%;
+    height: 40px;
+    background-color: red;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 80px;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
 
 .topo3 > .dropdown_container > .linguagem_drop_down {
     color: #757575;
     background-color: transparent;
+}
+span > .dropdown_container > .linguagem_drop_down {
+    color: #757575;
+    background-color: transparent;
+}
+#dropdown_contain {
+    width: fit-content;
+    border: 1px solid #757575; 
+    color: #757575;
+    cursor: pointer;
+}
+#dropdown_contain > .inp{
+    color: #757575;
+    background-color: transparent;
+}
+.acordo{
+    width: 100%;
+}
+.list_container{
+    border-top: 8px solid #222;
+    padding: 2rem 5rem 6rem 0;
+}
+.cabeça{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.quest{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+}
+.visib{
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+     overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.visib > p{
+    margin: 1rem;
+}
+.get_email{
+    text-align: center;
+}
+.email_form{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
 }
 @media (min-width: 768px) {
     .divs {
@@ -326,6 +456,10 @@ li a{
     }
     .divs__title {
         font-size: 35px;
+    }
+    btn1{
+        padding: 10px 20px;
+        font-size: 18px;   
     }
     .divs__sub__title {
     font-size: 20px;
@@ -348,13 +482,44 @@ li a{
     .post__detalhes > h6 {
     font-size: 14px;
     }
-    
+    .quest{
+        font-size: 20px;
+    }
+    .cabeça{
+        font-size: 38px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .list{
+        padding: 1rem 5rem;
+    }
+    .get_email{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(15%);
+    }
 }
 @media (min-width: 1024px){
-    .dropdown_container{
+    .banner{
+        top: 50%;
+        left: 50%;
+    }
+    .barrasup{
+        padding: 2% 5%
+    }
+    .item1{
+        width: 150px;
+    }
+    .dropdown_container1{
         padding: 10px 5px;
     }
-    .divs {color: #737373;
+    .item2{
+        gap: 30px;
+    }
+    .divs {
+        color: #737373;
         font-size: 1em;
         min-width: 190px;
         padding-bottom: 20px;
@@ -390,7 +555,7 @@ li a{
         width: 20%;
     }
     .footer_site {
-        padding: 2rem 20rem;
+        padding: 2rem 15rem;
         align-items: flex-start;
         text-align: left;
         justify-content: flex-start;
@@ -406,7 +571,17 @@ li a{
     .topo4 {
         align-self: flex-start;
     }
-    
+    .list{
+        padding: 1rem 25rem;
+    }
+    .get_email{
+        transform: translateX(16%);
+    }
+    main section.servicos .container {
+        grid-template-columns: 1fr;
+    }
+
+ 
 }
 @media (min-width: 1254px){
 

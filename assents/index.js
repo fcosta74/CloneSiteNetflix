@@ -1,7 +1,7 @@
-let accordian = document.getElementsByClassName("FAQ__title");
+let acordo = document.getElementsByClassName("quest");
 
-for (let i = 0; i < accordian.length; i++) {
-  accordian[i].addEventListener("click", function () {
+for (let i = 0; i < acordo.length; i++) {
+  acordo[i].addEventListener("click", function () {
     if (this.childNodes[1].classList.contains("fa-plus")) {
       this.childNodes[1].classList.remove("fa-plus");
       this.childNodes[1].classList.add("fa-times");

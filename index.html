@@ -7,6 +7,9 @@
         <title>Netflix</title>
         <link rel="shortcut icon" href="netflix.png" type="image/x-icon">
         <link rel="stylesheet" href="assents/stilos.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"/>
     </head>
     <body>
         <header>
@@ -15,16 +18,36 @@
         </header>
         <main>
             <div class="container">
-                <div>
-                    <img class="logo" src="assents/imagens/logo netflix png.png">                 
+                <nav class="barrasup">
+                    <img class="logo" src="assents/imagens/logo netflix png.png"></img>
+                    <div class="menu">
+                        <div class="dropdown_container1">
+                            <i class="fas fa-globe"></i>            
+                            <select name="linguagens" id="linguagesSelect" class="linguagem_drop_down">
+                                <option value="portugues" selected>Português</option>
+                                <option value="ingles">Ingles</option>
+                            </select>   
+                        
+                        </div>
+                      
+                        <button class="btn1">Entrar</button>
+                    </div>
+                </nav>>
+                <!--    <img class="logo" src="assents/imagens/logo netflix png.png">
                     <button class="btn1">Entrar</button>
-                    <select class="inp" id="lang-switcher-header-select" tabindex="0" placeholder="lang-switcher">
-                        <option lang="pt" value="/br/" data-language="pt" data-country="BR">Português</option>
-                        <option lang="en" value="/br-en/" data-language="en" data-country="BR">English</option>
-
-                    </select>
+                        <i class="fas fa-globe"></i>
                     
-                </div>               
+                        <select name="linguagens" id="linguagesSelect" class="linguagemdrop">
+                            <option value="portugues" selected>Português</option>
+                            <option value="ingles">Ingles</option>
+                        
+                        </select>
+  
+                    </span>
+                    
+                  </div> 
+                -->
+                 
                 <section class="banner">   
                     <div class="texto">
                         <h1>Filmes, séries e muito mais. <br>Sem limites.</h1>
@@ -32,7 +55,7 @@
                         <h4>Quer assitir? Inoforme o seu email para criar ou reiniciar sua assinatura.</h4>   
                         <div class="form">
                             <input class="email" placeholder="E-mail">
-                            <button class="btn2">Vamos lá <img src="assents/imagens/seta.svg" alt="seta"></button>
+                            <button class="btn2">Vamos lá <img src="assents/imagens/seta.svg" style="height: 1rem; text-align: center;" alt="seta"></button>
                         </div>
                     </div>
                 </section>
@@ -104,11 +127,11 @@
                 
             </section>
             <!-- Div 5 -->
-            <section class="list_contaier">
-                <h1>Perguntas frequentes</h1>
-                <div class="lis">
-                    <div class="acordion">
-                        <button class="ques">Oque é a Netflix?<svg id="thi-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"></svg></button>
+            <section class="list_container">
+                <h1 class="cabeça">Perguntas frequentes</h1>
+                <div class="list">
+                    <div class="acordo">
+                        <button class="quest">Oque é a Netflix?<i class="fal fa-plus"></i></button>
                         <div class="visib">
                             <p class="resposta">A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e
                                 documentários premiados em milhares de aparelhos conectados à internet.
@@ -121,8 +144,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="acordion">
-                        <button class="ques">Quanto custa a Netflix?<svg id="thi-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"></svg></button>
+                    <div class="acordo">
+                        <button class="quest">Quanto custa a Netflix?<i class="fal fa-plus"></i></button>
                         <div class="visib">
                             <p class="resposta">Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$18,90 a R$55,90 por mês. Sem contrato nem taxas extras.
                             </p>
@@ -130,39 +153,39 @@
                         </div>
                           
                     </div>
-                    <div class="acordion">
-                        <button class="ques">O que muda no plano básico com anúncios?<svg id="thi-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"></svg></button>
+                    <div class="acordo">
+                        <button class="quest">O que muda no plano básico com anúncios?<i class="fal fa-plus"></i></button>
                         <div class="visib">
                             <p class="resposta">O plano Básico com anúncios é uma excelente maneira de assistir a séries e filmes por um preço mais baixo. Você pode assistir a seus títulos favoritos em qualquer aparelho e com intervalos limitados para anúncios. Este plano não permite downloads nem contém determinados filmes e séries com restrições de licenciamento. Há também algumas restrições de localização e aparelho. Saiba mais.
                             </p>
                         </div>
                     </div>
-                    <div class="acordion">
-                        <button class="ques">Onde posso assitir?<svg id="thi-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"></svg></button>
+                    <div class="acordo">
+                        <button class="quest">Onde posso assitir?<i class="fal fa-plus"></i></button>
                         <div class="visib">
                             <p class="resposta">Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
                             </p>
                             <p class="resposta">Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</p>
                         </div>
                     </div>
-                    <div class="acordion">
-                        <button class="ques">Como faço para cancelar?<svg id="thi-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"></svg></button>
+                    <div class="acordo">
+                        <button class="quest">Como faço para cancelar?<i class="fal fa-plus"></i></button>
                         <div class="visib">
                             <p class="resposta">A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
                             </p>
                             
                         </div>
                     </div>
-                    <div class="acordion">
-                        <button class="ques">O que eu posso assistir na Netflix?<svg id="thi-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"></svg></button>
+                    <div class="acordo">
+                        <button class="quest">O que eu posso assistir na Netflix?<i class="fal fa-plus"></i></button>
                         <div class="visib">
-                            <p class="resposta">A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
+                            <p class="resposta">A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser. Lo
                             </p>
                             
                         </div>
                     </div>
-                    <div class="acordion">
-                        <button class="ques">A Netflix é adequada para crianças?<svg id="thi-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"></svg></button>
+                    <div class="acordo">
+                        <button class="quest">A Netflix é adequada para crianças?<i class="fal fa-plus"></i></svg></button>
                         <div class="visib">
                             <p class="resposta">A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
                             </p>
@@ -177,12 +200,11 @@
                 <div class="get_email">
                     <h3>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
                     <div class="email_form">
-                        <div class="form_container">
-                            <input type="email" class="email_imput" placeholder=" ">
+                        <div class="form">
+                            <input class="email" class="email_imput" placeholder=" ">
+                            <button class="btn2">Vamos lá <img src="assents/imagens/seta.svg" style="height: 1rem; text-align: center;"  alt="seta"></button>
                         </div>
-                        <button class="butao2">
-                            Vamos Lá <i class="apeta"></i>
-                        </button>
+                        
                     </div>
                 </div>
 
@@ -219,20 +241,21 @@
                         <li><a href="#">Preferências de cookies</a></li>
                         <li><a href="#">Avisos legais</a></li>
                     </ul>
+                </div>
                     <div class="topo3">
                         <div class="dropdown_container">
-                        <i class="fas fa-globe"></i>            
-                        <select name="linguagens" id="linguagesSelect" class="linguagem_drop_down">
-                            <option value="portugues" selected>Português</option>
-                            <option value="ingles">Ingles</option>
-                        </select>   
+                            <i class="fas fa-globe"></i>            
+                            <select name="linguagens" id="linguagesSelect" class="linguagem_drop_down">
+                                <option value="portugues" selected>Português</option>
+                                <option value="ingles">Ingles</option>
+                            </select>   
                         
                         </div>
                     </div>
                     <div class="topo4">
                     <p>Netflix Brasil</p>
                     </div>
-                </div>
+                
             </div>
         </footer>
         <script src="assents/index.js"></script>
