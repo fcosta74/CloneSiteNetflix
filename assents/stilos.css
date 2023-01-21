@@ -1,3 +1,10 @@
+@font-face {
+    font-family:'Netflix Sans';
+    src: url('font/NetflixSans-Black.otf');
+
+    font-weight:normal ;
+    font-style: normal;
+}
 *{   
     margin: 0;
     padding: 0;
@@ -8,6 +15,7 @@ body{
     font-family: "Netflix Sans" ,sans-serif;
     color: white;
 }
+
 .barrasup {
   position: relative;
   top: 0;
@@ -130,7 +138,7 @@ header{
     font-size: 50px;
     font-weight: bold;
     color: #FFFFFF;
-    font-family: 'NetiflixSans-Medium', sans-serif;
+    font-family: 'Netiflix Sans', sans-serif;
 }
 .texto h2{
     text-align: center;
