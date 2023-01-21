@@ -1,9 +1,12 @@
 @font-face {
-    font-family:'Netflix Sans';
+    font-family:'Netflix Sans-black';
     src: url('font/NetflixSans-Black.otf');
-
-    font-weight:normal ;
-    font-style: normal;
+    font-family:'Netflix Sans-regular';
+    src: url('font/NetflixSans-Regular.otf');
+    font-family:'Netflix Sans-medium';
+    src: url('font/NetflixSans-Medium.otf');
+    font-family:'Netflix Sans-bold';
+    src: url('font/NetflixSans-Bold.otf');
 }
 *{   
     margin: 0;
@@ -12,7 +15,6 @@
 }
 body{
     background-color: #000000;
-    font-family: "Netflix Sans" ,sans-serif;
     color: white;
 }
 
@@ -91,7 +93,7 @@ header{
     margin-top: 20px;
     font-size: 17px;
     color: #333333;
-    font-family: 'NetiflixSans-Regular', sans-serif;
+    font-family: 'NetiflixSans-medium';
     
 }
 .btni{
