@@ -140,7 +140,7 @@ header{
     font-size: 50px;
     font-weight: bold;
     color: #FFFFFF;
-    font-family: 'Netiflix Sans', sans-serif;
+ 
 }
 .texto h2{
     text-align: center;
@@ -162,7 +162,6 @@ header{
     font-size: 19px;
     padding: 10px;
     color: #FFFFFF;
-    font-family: 'NetiflixSans-Regular', sans-serif;
 }
 .form{
     display: flex;
