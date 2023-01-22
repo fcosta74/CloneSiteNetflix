@@ -1,3 +1,15 @@
+@font-face {
+    font-family:'Netflix Sans-black';
+    src: url('font/NetflixSans-Black.otf') format('opentype');
+    font-family: 'Netflix Sans-bold';
+    src: url('font/NetflixSans-Bold.otf') format('opentype');
+    font-family: 'Netflix Sans-medium';
+    src:url('font/NetflixSans-Medium.otf') format('opentype');
+    font-family: 'Netflix Sans-regular';
+    src:url('font/NetflixSans-Regular.otf') format('opentype');
+    font-weight:normal ;
+    font-style: normal;
+}
 *{   
     margin: 0;
     padding: 0;
@@ -5,59 +17,41 @@
 }
 body{
     background-color: #000000;
-    font-family: "Netflix Sans" ,sans-serif;
     color: white;
 }
+
 .barrasup {
-  position: relative;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 3% 5%;
   z-index: 10;
+
 } 
-.item1 {
-    gap: 10px;
-    width: 100px;
+.menu{
+    height: 100%;
+    width: 160px;
   
 }
 .logo {
-    height: 40px;
-    max-width: 100%;
-    margin-top: 2rem;
-}
-nav {
-    position: fixed;
+    height: 100%;
     width: 100%;
-    max-width: 100%;
-    margin-top: 0;
-    color: whitesmoke;
+
 }
 
 .linguagem_drop_down{
     background: transparent;
     border: none;
     color: white;
+    font-size: 16px;
 }
 .linguagem_drop_down:focus{
     outline: none;
 }
-.dropdown_container1{
-    margin-top: 2rem;
-    max-width: 100%;
-    height: 40px;
-    cursor: pointer;
-    color: #FFFFFF;
-    width: 150px;
-    font-size: 1rem;
-    border-radius: 0.3rem;
-    border: 1px solid white;
-    padding: 0.4rem;
-    border-radius: 4px;
-    background: rgba(0, 0, 0, 0.4);
-    float: left;
-    width: fit-content;
+.itens{
+    display: flex;
+    gap: 10px;
 }
 .dropdown_container {
     border: 1px solid white;
@@ -65,44 +59,50 @@ nav {
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.4);
 }
-.dropdown_container {
-    border: 1px solid white;
-    padding: 0.4rem;
-    border-radius: 4px;
-    background: rgba(0, 0, 0, 0.4);
-}
+
 header{
-    background-color: #FFFFFF;  
+    background-color: #FFFFFF; 
     display: flex;
     justify-content: center;
     margin-top: 0px;
     height: 3.5rem;
+    padding: 4px;
 }
 .acima{
     text-align: center;
-    margin-top: 20px;
-    font-size: 17px;
+    margin-top: 15px;
+    font-size: 16px;
     color: #333333;
     font-family: 'NetiflixSans-Regular', sans-serif;
     
+}
+.valor{
+    font-size: 20px;
+    border: #000000;
 }
 .btni{
     border-style: none;
     cursor: pointer;
     color: #0071eb;
     align-items: center;
-    font-size: 16px;
-    justify-content: center;
+    font-size: 18px;
     background: transparent;
-    border: 0;
+    margin-top: 0px;
 }
-
-.container{
-    width: 100%;
-    height: 120vh;
-    background-repeat: no-repeat;
+#seta{
+    position: absolute;
+    padding: 10px;
+    box-shadow: 2px -2px 0 1px #0071eb inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(215deg);
+    margin-top: 0;
+}
+.hero{
     background-image: url('imagens/fundo.jpeg');
-    margin-top: 0
+    width: 100%;
+    height: 100vh;
+
 }
 
 .texto{
@@ -128,31 +128,28 @@ header{
 .texto h1{
     text-align: center;
     font-size: 50px;
-    font-weight: bold;
-    color: #FFFFFF;
-    font-family: 'NetiflixSans-Medium', sans-serif;
+    font-weight: medium;
+    font-family: 'Netflix Sans-medium', sans-serif;
 }
 .texto h2{
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
-    font-weight: bold;
-    color: black;
-    
+    font-weight: medium;
+    font-family: 'Netflix Sans-medium', sans-serif;    
 }
 .texto h3{
     text-align: center;
     font-size: 26px;
     padding: 10px;
-    color: #FFFFFF;
-    
+    font-family: 'Netflix Sans-regular', sans-serif;
 }
 .texto h4{
     text-align: center;
     font-size: 19px;
     padding: 10px;
-    color: #FFFFFF;
-    font-family: 'NetiflixSans-Regular', sans-serif;
+    font-family: 'Netflix Sans-regular', sans-serif;
+
 }
 .form{
     display: flex;
@@ -178,21 +175,13 @@ header{
     vertical-align: top;
     align-items: center;
 }
-.dropdown_container1{
-    float: left;
-}
-
 .btn1{
-    margin: 30px 40px;
-    float: right;
-    max-width: 100%;
-    height: 40px;
-    background-color: red;
-    cursor: pointer;
-    color: #FFFFFF;
-    width: 80px;
-    font-size: 1rem;
-    border-radius: 0.3rem;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    
 }
 .divs{
     border-top: 8px solid #222;
@@ -208,13 +197,11 @@ header{
     font-size: 3.125rem;
     font-weight: 600;
     margin: 10px 0px;
-    font-family: 'NetiflixSans-Medium', sans-serif;
     
 }
 .divs__sub__titulo{
     font-size: 1.625rem; 
     font-weight: 400;
-    font-family: 'NetiflixSans-Regular', sans-serif;
 }
 
 .divs__img__container{
@@ -320,6 +307,8 @@ footer {
     margin: 0 auto;
     width: 85%;
     gap: 20px;
+    font-family: 'Netflix Sans-regular', serif;
+
 }
 
 .topo1{
@@ -345,6 +334,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-bottom: 1rem;
+    
 }
 .topo4{
     margin-top: 1rem;
@@ -364,55 +354,30 @@ li a{
     color: #757575;
     cursor: pointer;
 }
-.linguagemdrop{
-    color: #757575;
-    background-color: transparent;
-    border: 1px solid #757575; 
-    cursor: pointer;
-    border: transparent;
-    margin-top: 1rem;
-    margin: 30px 40px;
-    float: right;
-    max-width: 100%;
-    height: 40px;
-    background-color: red;
-    cursor: pointer;
-    color: #FFFFFF;
-    width: 80px;
-    font-size: 1rem;
-    border-radius: 0.3rem;
-}
+
 
 .topo3 > .dropdown_container > .linguagem_drop_down {
     color: #757575;
-    background-color: transparent;
+   
 }
-span > .dropdown_container > .linguagem_drop_down {
-    color: #757575;
-    background-color: transparent;
-}
-#dropdown_contain {
-    width: fit-content;
-    border: 1px solid #757575; 
-    color: #757575;
-    cursor: pointer;
-}
-#dropdown_contain > .inp{
-    color: #757575;
-    background-color: transparent;
-}
+
 .acordo{
     width: 100%;
+    font-family: 'Netflix Sans-regular', serif;
+    font-size: 26px;
+    color: #FFFFFF;
 }
 .list_container{
     border-top: 8px solid #222;
     padding: 2rem 5rem 6rem 0;
 }
 .cabeça{
-    font-size: 20px;
+    font-size: 50px;
     text-align: center;
     font-weight: 600;
     margin: 1rem 3rem;
+    font-weight: medium;
+    font-family: 'Netflix Sans-medium', serif;
 }
 
 .list{
@@ -430,13 +395,13 @@ span > .dropdown_container > .linguagem_drop_down {
     font-size: 18px;
     background-color: #303030;
     border: 1px solid #303030;
-    color: white;
+    color: #FFFFFF;
 }
 .visib{
     background-color: #303030;
     border-top: 1px solid black;
     max-height: 0;
-     overflow: hidden;
+    overflow: hidden;
     transition: max-height 0.5s ease-in-out;
 }
 .visib > p{
@@ -459,7 +424,8 @@ span > .dropdown_container > .linguagem_drop_down {
     }
     btn1{
         padding: 10px 20px;
-        font-size: 18px;   
+        font-size: 18px; 
+
     }
     .divs__sub__title {
     font-size: 20px;
@@ -509,14 +475,16 @@ span > .dropdown_container > .linguagem_drop_down {
     .barrasup{
         padding: 2% 5%
     }
-    .item1{
+    .menu{
         width: 150px;
     }
-    .dropdown_container1{
-        padding: 10px 5px;
-    }
-    .item2{
+
+    .itens{
         gap: 30px;
+    }
+
+    .dropdown_container{
+        padding: 10px 5px;
     }
     .divs {
         color: #737373;

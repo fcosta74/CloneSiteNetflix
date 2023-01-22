@@ -4,61 +4,53 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Netflix</title>
-        <link rel="shortcut icon" href="netflix.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assents/imagens/netflix.png" type="image/x-icon">
         <link rel="stylesheet" href="assents/stilos.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
             crossorigin="anonymous"/>
     </head>
-    <body>
+    <body>   
         <header>
-            <p class="acima">Planos a partir de <strong><a>R$ 18,90</a></strong>.</p>
-            <button class="btni">Saiba mais<img class="seta" src="assents/imagens/seta.svg" alt="seta"></button>    
+            <p class="acima">Planos a partir de <strong><a class="valor">R$ 18,90</a></strong>. &nbsp;&nbsp; &nbsp;
+                <button class="btni"><a><strong>Saiba mais<strong><div id="seta"></div></a>
+            </p> 
         </header>
+        
         <main>
-            <div class="container">
+            <section class="hero">
                 <nav class="barrasup">
-                    <img class="logo" src="assents/imagens/logo netflix png.png"></img>
                     <div class="menu">
-                        <div class="dropdown_container1">
-                            <i class="fas fa-globe"></i>            
-                            <select name="linguagens" id="linguagesSelect" class="linguagem_drop_down">
-                                <option value="portugues" selected>Português</option>
-                                <option value="ingles">Ingles</option>
-                            </select>   
-                        
-                        </div>
-                      
-                        <button class="btn1">Entrar</button>
+                        <img src="assents/imagens/netflix-logo-0.png" alt="logo" class="logo">
                     </div>
-                </nav>>
-                <!--    <img class="logo" src="assents/imagens/logo netflix png.png">
-                    <button class="btn1">Entrar</button>
-                        <i class="fas fa-globe"></i>
-                    
-                        <select name="linguagens" id="linguagesSelect" class="linguagemdrop">
-                            <option value="portugues" selected>Português</option>
-                            <option value="ingles">Ingles</option>
-                        
-                        </select>
-  
-                    </span>
-                    
-                  </div> 
-                -->
-                 
-                <section class="banner">   
-                    <div class="texto">
-                        <h1>Filmes, séries e muito mais. <br>Sem limites.</h1>
-                        <h3>Assista onde quiser. Cancele quando quiser.</h3>
-                        <h4>Quer assitir? Inoforme o seu email para criar ou reiniciar sua assinatura.</h4>   
-                        <div class="form">
-                            <input class="email" placeholder="E-mail">
-                            <button class="btn2">Vamos lá <img src="assents/imagens/seta.svg" style="height: 1rem; text-align: center;" alt="seta"></button>
+                        <div class="itens">
+                            <div class="item1">
+                                <div class="dropdown_container">
+                                    <i class="fas fa-globe"></i>            
+                                    <select name="linguagens" id="linguagesSelect" class="linguagem_drop_down">
+                                        <option value="portugues" selected>Português</option>
+                                        <option value="ingles">Ingles</option>
+                                    </select>   
+                                </div>
+                            </div>
+                            <div class="item1">    
+                                <button class="btn1">Entrar</button>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </nav>
+                <div class="texto">
+                    <h1>Filmes, séries e muito mais. <br>Sem limites.</h1>
+                    <h3>Assista onde quiser. Cancele quando quiser.</h3>
+                    <h4>Quer assitir? Inoforme o seu email para criar ou reiniciar sua assinatura.</h4>   
+                    <div class="form">
+                        <input class="email" placeholder="E-mail">
+                        <button class="btn2">Vamos lá <img src="assents/imagens/seta.svg" style="height: 1rem; text-align: center;" alt="seta"></button>
+                    </div>
+                </div>
+            
+                
+            </section>
             <section class="divs__container">
                 <!-- Div 1 -->
                 <div class="divs"> 
