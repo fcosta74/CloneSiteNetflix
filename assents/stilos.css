@@ -1,3 +1,19 @@
+@font-face{
+    font-family: Netflix Sans-Black;
+    src: url("font/NetflixSans-Black.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Bold;
+    src: url("font/NetflixSans-Bold.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Medium;
+    src: url("font/NetflixSans-Medium.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Regular;
+    src: url("font/NetflixSans-Regular.otf");
+}
 *{   
     margin: 0;
     padding: 0;
@@ -6,7 +22,6 @@
 body{
     background-color: #000000;
     color: white;
-    font-family: "Netflix Sans", sans-serif;
 }
 
 .barrasup {
@@ -117,6 +132,7 @@ header{
 .texto h1{
     text-align: center;
     font-size: 50px;
+    font-family: Netflix Sans-Medium;
 }
 .texto h2{
     text-align: center;
@@ -127,14 +143,13 @@ header{
     text-align: center;
     font-size: 26px;
     padding: 10px;
-
+    font-family: Netflix Sans-Regular;
 }
 .texto h4{
     text-align: center;
     font-size: 19px;
     padding: 10px;
-   
-
+    font-family: Netflix Sans-Regular;
 }
 .form{
     display: flex;
@@ -209,7 +224,10 @@ header{
 .divs__detalhes{
     text-align: center;
     color: #FFFFFF;
-    
+    font-family: Netflix Sans-Regular;
+}
+.divs__detalhes h2{
+    font-family: Netflix Sans-Medium;
 }
 .divs__titulo{  
     font-size: 3.125rem;
