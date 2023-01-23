@@ -159,6 +159,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 15px;
+
 }
 .email{
     border: none;
@@ -197,6 +198,7 @@ header{
 }
 .get_email > h3{
     margin-bottom: 10px;
+    font-size: 19px;
 }
 .btn2{
     background-color: #dc030f;
@@ -425,6 +427,7 @@ li a{
     background-color: #303030;
     border: 1px solid #303030;
     color: white;
+    text-align: left;
 }
 .visib{
     background-color: #303030;
