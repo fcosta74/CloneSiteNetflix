@@ -1,3 +1,13 @@
+@font-face {
+    font-family:'Netflix Sans-black';
+    src: url('font/NetflixSans-Black.otf');
+    font-family:'Netflix Sans-regular';
+    src: url('font/NetflixSans-Regular.otf');
+    font-family:'Netflix Sans-medium';
+    src: url('font/NetflixSans-Medium.otf');
+    font-family:'Netflix Sans-bold';
+    src: url('font/NetflixSans-Bold.otf');
+}
 *{   
     margin: 0;
     padding: 0;
@@ -6,41 +16,58 @@
 body{
     background-color: #000000;
     color: white;
-    font-family: "", sans-serif;
 }
 
 .barrasup {
+  position: relative;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 3% 5%;
   z-index: 10;
-
 } 
-.menu{
-    height: 100%;
-    width: 160px;
+.item1 {
+    gap: 10px;
+    width: 100px;
   
 }
 .logo {
-    height: 100%;
+    height: 40px;
+    max-width: 100%;
+    margin-top: 2rem;
+}
+nav {
+    position: fixed;
     width: 100%;
-
+    max-width: 100%;
+    margin-top: 0;
+    color: whitesmoke;
 }
 
 .linguagem_drop_down{
     background: transparent;
     border: none;
     color: white;
-    font-size: 16px;
 }
 .linguagem_drop_down:focus{
     outline: none;
 }
-.itens{
-    display: flex;
-    gap: 10px;
+.dropdown_container1{
+    margin-top: 2rem;
+    max-width: 100%;
+    height: 40px;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    float: left;
+    width: fit-content;
 }
 .dropdown_container {
     border: 1px solid white;
@@ -48,25 +75,26 @@ body{
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.4);
 }
-
+.dropdown_container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+}
 header{
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;  
     display: flex;
     justify-content: center;
     margin-top: 0px;
     height: 3.5rem;
-    padding: 4px;
 }
 .acima{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 17px;
     color: #333333;
-}
-.valor{
-    font-size: 20px;
-    border: #000000;
-    font-weight: 1000;
+    font-family: 'NetiflixSans-medium', sans-serif;
+    
 }
 .btni{
     border-style: none;
@@ -74,24 +102,17 @@ header{
     color: #0071eb;
     align-items: center;
     font-size: 16px;
+    justify-content: center;
     background: transparent;
-    margin-top: 0px;
-    font-weight: 700;
+    border: 0;
 }
-#seta{
-    position: absolute;
-    padding: 10px;
-    box-shadow: 2px -2px 0 1px #0071eb inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    transform: rotate(215deg);
-    margin-top: 0;
-}
-.hero{
-    background-image: url('imagens/fundo.jpeg');
-    width: 100%;
-    height: 100vh;
 
+.container{
+    width: 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-image: url('imagens/fundo.jpeg');
+    margin-top: 0
 }
 
 .texto{
@@ -117,89 +138,71 @@ header{
 .texto h1{
     text-align: center;
     font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Netiflix Sans', sans-serif;
 }
 .texto h2{
     text-align: center;
     margin-top: 20px;
-    font-size: 20px;  
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    
 }
 .texto h3{
     text-align: center;
     font-size: 26px;
     padding: 10px;
-
+    color: #FFFFFF;
+    
 }
 .texto h4{
     text-align: center;
     font-size: 19px;
     padding: 10px;
-   
-
+    color: #FFFFFF;
+    font-family: 'NetiflixSans-Regular', sans-serif;
 }
 .form{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
-
+    margin-top: 20px;
+    height: 60px;
+   
 }
 .email{
-    border: none;
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    padding-left: 7px;  
-}
-.email-label{
-    color: black;
-    position: absolute;
-    top: 28%;
-    left: 2%;
-    color: rgb(153, 149, 149);
-    transition: 0.5s;
-}
-.email:focus + .email-label{
-    top: 0.2rem;
-    font-size: 10px;
-}
-.email:not(:placeholder-shown) .mail:not(:focus) + .email-label{
-    top: 0.2rem;
-    font-size: 10px;
-}
-.email:focus-visible{
-    outline: none;
+    width: 435px;
+    padding-left: 10px;   
 }
 .email:hover{
     opacity: 0.6;
 }
-.formemail{
-    background-color: white;
-    width: 90%;
-    height: 50px;
-    position: relative;
-}
-.get_email > h3{
-    margin-bottom: 10px;
-    font-size: 19px;
-}
 .btn2{
-    background-color: #dc030f;
-    border: 1px solid #dc030f;
-    padding: 0.8rem 1.2rem;
-    border-radius: 2px;
-    font-size: 15px;
+    width: 120px;
+    background-color: #e50914;
+    border: 0;
+    font-size: 1.2rem;
     cursor: pointer;
-    color: white;
-    letter-spacing: 1px;
+    color: #FFFFFF;
+    vertical-align: top;
+    align-items: center;
 }
+.dropdown_container1{
+    float: left;
+}
+
 .btn1{
-    background-color: #dc030f;
-    border: 1px solid #dc030f;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    
+    margin: 30px 40px;
+    float: right;
+    max-width: 100%;
+    height: 40px;
+    background-color: red;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 80px;
+    font-size: 1rem;
+    border-radius: 0.3rem;
 }
 .divs{
     border-top: 8px solid #222;
@@ -215,11 +218,13 @@ header{
     font-size: 3.125rem;
     font-weight: 600;
     margin: 10px 0px;
+    font-family: 'NetiflixSans-Medium', sans-serif;
     
 }
 .divs__sub__titulo{
     font-size: 1.625rem; 
     font-weight: 400;
+    font-family: 'NetiflixSans-Regular', sans-serif;
 }
 
 .divs__img__container{
@@ -325,8 +330,6 @@ footer {
     margin: 0 auto;
     width: 85%;
     gap: 20px;
-   
-
 }
 
 .topo1{
@@ -352,7 +355,6 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-bottom: 1rem;
-    
 }
 .topo4{
     margin-top: 1rem;
@@ -372,20 +374,49 @@ li a{
     color: #757575;
     cursor: pointer;
 }
-
+.linguagemdrop{
+    color: #757575;
+    background-color: transparent;
+    border: 1px solid #757575; 
+    cursor: pointer;
+    border: transparent;
+    margin-top: 1rem;
+    margin: 30px 40px;
+    float: right;
+    max-width: 100%;
+    height: 40px;
+    background-color: red;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 80px;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
 
 .topo3 > .dropdown_container > .linguagem_drop_down {
     color: #757575;
-   
+    background-color: transparent;
 }
-
+span > .dropdown_container > .linguagem_drop_down {
+    color: #757575;
+    background-color: transparent;
+}
+#dropdown_contain {
+    width: fit-content;
+    border: 1px solid #757575; 
+    color: #757575;
+    cursor: pointer;
+}
+#dropdown_contain > .inp{
+    color: #757575;
+    background-color: transparent;
+}
 .acordo{
     width: 100%;
-    
 }
 .list_container{
     border-top: 8px solid #222;
-    padding: 2rem 0;
+    padding: 2rem 5rem 6rem 0;
 }
 .cabeça{
     font-size: 20px;
@@ -410,13 +441,12 @@ li a{
     background-color: #303030;
     border: 1px solid #303030;
     color: white;
-    text-align: left;
 }
 .visib{
     background-color: #303030;
     border-top: 1px solid black;
     max-height: 0;
-    overflow: hidden;
+     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
 }
 .visib > p{
@@ -439,8 +469,7 @@ li a{
     }
     btn1{
         padding: 10px 20px;
-        font-size: 18px; 
-
+        font-size: 18px;   
     }
     .divs__sub__title {
     font-size: 20px;
@@ -490,28 +519,14 @@ li a{
     .barrasup{
         padding: 2% 5%
     }
-    .menu{
+    .item1{
         width: 150px;
     }
-    .form{
-        flex-direction: row;
-        align-items: center;
-        gap: 1px;  
-    }
-    .formemail{
-        width: 35%;
-    }
-    .acordo{
-        width: 70%;
-    }
-    .itens{
-        gap: 30px;
-    }
-    .btn2{
-        height: 50px;
-    }
-    .dropdown_container{
+    .dropdown_container1{
         padding: 10px 5px;
+    }
+    .item2{
+        gap: 30px;
     }
     .divs {
         color: #737373;
