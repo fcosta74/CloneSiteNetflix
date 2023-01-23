@@ -1,15 +1,3 @@
-@font-face {
-    font-family:'Netflix Sans-black';
-    src: url('font/NetflixSans-Black.otf') format('opentype');
-    font-family: 'Netflix Sans-bold';
-    src: url('font/NetflixSans-Bold.otf') format('opentype');
-    font-family: 'Netflix Sans-medium';
-    src:url('font/NetflixSans-Medium.otf') format('opentype');
-    font-family: 'Netflix Sans-regular';
-    src:url('font/NetflixSans-Regular.otf') format('opentype');
-    font-weight:normal ;
-    font-style: normal;
-}
 *{   
     margin: 0;
     padding: 0;
@@ -18,6 +6,7 @@
 body{
     background-color: #000000;
     color: white;
+    font-family: "", sans-serif;
 }
 
 .barrasup {
@@ -73,8 +62,6 @@ header{
     margin-top: 15px;
     font-size: 17px;
     color: #333333;
-    font-family: 'NetiflixSans-Regular', sans-serif;
-    font-weight: 600;
 }
 .valor{
     font-size: 20px;
@@ -130,27 +117,23 @@ header{
 .texto h1{
     text-align: center;
     font-size: 50px;
-    font-weight: medium;
-    font-family: 'Netflix Sans-medium', sans-serif;
 }
 .texto h2{
     text-align: center;
     margin-top: 20px;
-    font-size: 20px;
-    font-weight: medium;
-    font-family: 'Netflix Sans-medium', sans-serif;    
+    font-size: 20px;  
 }
 .texto h3{
     text-align: center;
     font-size: 26px;
     padding: 10px;
-    font-family: 'Netflix Sans-regular', sans-serif;
+
 }
 .texto h4{
     text-align: center;
     font-size: 19px;
     padding: 10px;
-    font-family: 'Netflix Sans-regular', sans-serif;
+   
 
 }
 .form{
@@ -159,6 +142,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 15px;
+
 }
 .email{
     border: none;
@@ -197,6 +181,7 @@ header{
 }
 .get_email > h3{
     margin-bottom: 10px;
+    font-size: 19px;
 }
 .btn2{
     background-color: #dc030f;
@@ -340,7 +325,7 @@ footer {
     margin: 0 auto;
     width: 85%;
     gap: 20px;
-    font-family: 'Netflix Sans-regular', serif;
+   
 
 }
 
@@ -396,7 +381,7 @@ li a{
 
 .acordo{
     width: 100%;
-  
+    
 }
 .list_container{
     border-top: 8px solid #222;
@@ -425,6 +410,7 @@ li a{
     background-color: #303030;
     border: 1px solid #303030;
     color: white;
+    text-align: left;
 }
 .visib{
     background-color: #303030;
@@ -513,7 +499,10 @@ li a{
         gap: 1px;  
     }
     .formemail{
-        width: 50%;
+        width: 35%;
+    }
+    .acordo{
+        width: 70%;
     }
     .itens{
         gap: 30px;
