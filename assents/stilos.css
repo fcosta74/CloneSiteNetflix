@@ -97,15 +97,36 @@ header{
 .hero{
     background-image: url('imagens/fundo.jpeg');
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 
 }
 
 .texto{
-    margin-top: 15vh;
-    top: 50%;
-    left: 50%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 75px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.texto h1{
+    font-family: Netflix Sans-Medium;
     
+}
+.texto h3{
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    font-family: Netflix Sans-Regular;
+}
+.texto h4{
+    text-align: center;
+    font-size: 19px;
+    padding: 10px;
+    font-family: Netflix Sans-Regular;
 }
 .inp{
     margin: 30px 5px;
@@ -121,28 +142,13 @@ header{
     padding: auto;
 }
 
-.texto h1{
-    text-align: center;
-    font-size: 50px;
-    font-family: Netflix Sans-Medium;
-}
+
 .texto h2{
     text-align: center;
     margin-top: 20px;
     font-size: 20px;  
 }
-.texto h3{
-    text-align: center;
-    font-size: 26px;
-    padding: 10px;
-    font-family: Netflix Sans-Regular;
-}
-.texto h4{
-    text-align: center;
-    font-size: 19px;
-    padding: 10px;
-    font-family: Netflix Sans-Regular;
-}
+
 .form{
     display: flex;
     flex-direction: column;
@@ -190,7 +196,6 @@ header{
     margin-bottom: 10px;
     font-size: 19px;
     font-family: Netflix Sans-Regular;
-    text-align: center;
 }
 .btn2{
     background-color: #dc030f;
@@ -216,9 +221,11 @@ header{
     margin-top: 0px;
 }
 .divs__detalhes{
-    text-align: center;
+    flex: 0 auto;
     color: #FFFFFF;
-    font-family: Netflix Sans-Regular;
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
 }
 .divs__detalhes h2{
     font-family: Netflix Sans-Medium;
@@ -397,15 +404,17 @@ li a{
 }
 .list_container{
     border-top: 8px solid #222;
-    padding: 1rem 0;
-    font-family: Netflix Sans-Regular;
+    padding: 2rem 0;
+    font-size: 3.125;
+    
 }
 .cabeça {
     font-size: 50px;
     text-align: center;
     margin-bottom: 1.2rem;
+    font-family: Netflix Sans-Regular;
     font-weight: 800;
-    letter-spacing: 1px;
+
 }
 .list{
     display: flex;
@@ -413,23 +422,16 @@ li a{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
 }
 .quest{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px 20px;
+    font-size: 18px;
     background-color: #303030;
     border: 1px solid #303030;
     color: white;
-   
-}
-.resposta{
-    text-align: justify;
-    font-size: 20px;
-    font-family: Netflix Sans-Regular;
-    
 }
 .visib{
     background-color: #303030;
@@ -439,22 +441,22 @@ li a{
     transition: max-height 0.5s ease-in-out;
 }
 .visib > p{
-    margin: 1.5rem;
-
+    margin: 1rem;
 }
 .get_email{
-    margin-top: 1rem;
-
+    text-align: center;
 }
 .email_form{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     margin: 2rem 0;
-  
 }
 @media (min-width: 768px) {
-    .divs {
-        padding: 4rem;
+    .texto h1{
+        font-size: 1.325rem;
+    }
+    .divs{
+        padding: 45px;
     }
     .divs__title {
         font-size: 35px;
@@ -486,20 +488,27 @@ li a{
     font-size: 14px;
     }
     .quest{
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .list{
         padding: 1rem 5rem;
-
     }
     .get_email{
-        width: 100%;
+        width: 75%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        transform: translateX(15%);
     }
 }
 @media (min-width: 1024px){
+    .texto h1{
+        font-size: 4rem;
+    }
+    .divs {
+        padding: 2rem;
+    }
     .banner{
         top: 50%;
         left: 50%;
@@ -516,7 +525,7 @@ li a{
         gap: 1px;  
     }
     .formemail{
-        width: 40%;
+        width: 75%;
     }
    
     .itens{
@@ -529,20 +538,14 @@ li a{
         padding: 10px 5px;
     }
     .divs {
-        color: #737373;
-        font-size: 1em;
-        min-width: 190px;
-        padding-bottom: 20px;
-        position: relative;
-        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 20px;
+
     }
     .divs__detalhes{
         text-align: left;
-        padding: 0 6rem;
+        padding: 0 10rem;
+        margin-left: 100px;
       }
     
     .divs__tittulo {
@@ -555,6 +558,9 @@ li a{
 
     .divs__img__container {
         max-width: 500px;
+        margin-right: 200px;
+        margin-left: 200px;
+
     }
     .divs__post__container {
         max-width: 20em;
@@ -583,20 +589,18 @@ li a{
     }
     .list{
         padding: 1rem 25rem;
- 
     }
     .cabeça{
         font-weight: 800;
     }
-  
+    .get_email{
+        transform: translateX(16%);
+    }
     main section.servicos .container {
         grid-template-columns: 1fr;
     }
 
-    .acordo{
-        width: 120%;
-        
-    }
+ 
 }
 @media (min-width: 1254px){
 
