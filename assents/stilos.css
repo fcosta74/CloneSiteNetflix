@@ -1,3 +1,19 @@
+@font-face{
+    font-family: Netflix Sans-Black;
+    src: url("font/NetflixSans-Black.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Bold;
+    src: url("font/NetflixSans-Bold.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Medium;
+    src: url("font/NetflixSans-Medium.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Regular;
+    src: url("font/NetflixSans-Regular.otf");
+}
 *{   
     margin: 0;
     padding: 0;
@@ -6,7 +22,6 @@
 body{
     background-color: #000000;
     color: white;
-
 }
 
 .barrasup {
@@ -78,27 +93,40 @@ header{
     margin-top: 0px;
     font-weight: 700;
 }
-#seta{
-    position: absolute;
-    padding: 10px;
-    box-shadow: 2px -2px 0 1px #0071eb inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    transform: rotate(215deg);
-    margin-top: 0;
-}
+
 .hero{
     background-image: url('imagens/fundo.jpeg');
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 
 }
 
 .texto{
-    margin-top: 15vh;
-    top: 50%;
-    left: 50%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 75px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.texto h1{
+    font-family: Netflix Sans-Medium;
     
+}
+.texto h3{
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    font-family: Netflix Sans-Regular;
+}
+.texto h4{
+    text-align: center;
+    font-size: 19px;
+    padding: 10px;
+    font-family: Netflix Sans-Regular;
 }
 .inp{
     margin: 30px 5px;
@@ -114,28 +142,13 @@ header{
     padding: auto;
 }
 
-.texto h1{
-    text-align: center;
-    font-size: 50px;
-}
+
 .texto h2{
     text-align: center;
     margin-top: 20px;
     font-size: 20px;  
 }
-.texto h3{
-    text-align: center;
-    font-size: 26px;
-    padding: 10px;
 
-}
-.texto h4{
-    text-align: center;
-    font-size: 19px;
-    padding: 10px;
-   
-
-}
 .form{
     display: flex;
     flex-direction: column;
@@ -182,6 +195,7 @@ header{
 .get_email > h3{
     margin-bottom: 10px;
     font-size: 19px;
+    font-family: Netflix Sans-Regular;
 }
 .btn2{
     background-color: #dc030f;
@@ -207,9 +221,14 @@ header{
     margin-top: 0px;
 }
 .divs__detalhes{
-    text-align: center;
+    flex: 0 auto;
     color: #FFFFFF;
-    
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
+}
+.divs__detalhes h2{
+    font-family: Netflix Sans-Medium;
 }
 .divs__titulo{  
     font-size: 3.125rem;
@@ -386,14 +405,17 @@ li a{
 .list_container{
     border-top: 8px solid #222;
     padding: 2rem 0;
+    font-size: 3.125;
+    
 }
-.cabeça{
-    font-size: 20px;
+.cabeça {
+    font-size: 50px;
     text-align: center;
-    font-weight: 600;
-    margin: 1rem 3rem;
-}
+    margin-bottom: 1.2rem;
+    font-family: Netflix Sans-Regular;
+    font-weight: 800;
 
+}
 .list{
     display: flex;
     flex-direction: column;
@@ -410,7 +432,6 @@ li a{
     background-color: #303030;
     border: 1px solid #303030;
     color: white;
-    text-align: left;
 }
 .visib{
     background-color: #303030;
@@ -431,8 +452,11 @@ li a{
     margin: 2rem 0;
 }
 @media (min-width: 768px) {
-    .divs {
-        padding: 4rem;
+    .texto h1{
+        font-size: 1.325rem;
+    }
+    .divs{
+        padding: 45px;
     }
     .divs__title {
         font-size: 35px;
@@ -466,11 +490,7 @@ li a{
     .quest{
         font-size: 20px;
     }
-    .cabeça{
-        font-size: 38px;
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
+
     .list{
         padding: 1rem 5rem;
     }
@@ -483,6 +503,12 @@ li a{
     }
 }
 @media (min-width: 1024px){
+    .texto h1{
+        font-size: 4rem;
+    }
+    .divs {
+        padding: 2rem;
+    }
     .banner{
         top: 50%;
         left: 50%;
@@ -499,11 +525,9 @@ li a{
         gap: 1px;  
     }
     .formemail{
-        width: 35%;
+        width: 75%;
     }
-    .acordo{
-        width: 70%;
-    }
+   
     .itens{
         gap: 30px;
     }
@@ -514,20 +538,14 @@ li a{
         padding: 10px 5px;
     }
     .divs {
-        color: #737373;
-        font-size: 1em;
-        min-width: 190px;
-        padding-bottom: 20px;
-        position: relative;
-        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 20px;
+
     }
     .divs__detalhes{
         text-align: left;
-        padding: 0 6rem;
+        padding: 0 10rem;
+        margin-left: 100px;
       }
     
     .divs__tittulo {
@@ -540,6 +558,9 @@ li a{
 
     .divs__img__container {
         max-width: 500px;
+        margin-right: 200px;
+        margin-left: 200px;
+
     }
     .divs__post__container {
         max-width: 20em;
@@ -568,6 +589,9 @@ li a{
     }
     .list{
         padding: 1rem 25rem;
+    }
+    .cabeça{
+        font-weight: 800;
     }
     .get_email{
         transform: translateX(16%);
