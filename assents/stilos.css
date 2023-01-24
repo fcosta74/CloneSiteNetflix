@@ -221,11 +221,9 @@ header{
     margin-top: 0px;
 }
 .divs__detalhes{
-    flex: 0 auto;
     color: #FFFFFF;
-    width: 52%;
-    height: 100%;
-    padding: 0 3rem 0 0;
+    width: 100%;
+    text-align: center;
 }
 .divs__detalhes h2{
     font-family: Netflix Sans-Medium;
@@ -544,7 +542,6 @@ li a{
     }
     .divs__detalhes{
         text-align: left;
-        padding: 0 10rem;
         margin-left: 100px;
       }
     
@@ -557,9 +554,8 @@ li a{
     }
 
     .divs__img__container {
-        max-width: 500px;
+        max-width: 400px;
         margin-right: 200px;
-        margin-left: 200px;
 
     }
     .divs__post__container {
