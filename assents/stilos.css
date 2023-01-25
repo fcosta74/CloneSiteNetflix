@@ -48,7 +48,7 @@ body{
     background: transparent;
     border: none;
     color: white;
-    font-size: 16px;
+
 }
 .linguagem_drop_down:focus{
     outline: none;
@@ -218,26 +218,22 @@ header{
 .divs{
     border-top: 8px solid #222;
     padding: 2rem 1rem;
-    margin-top: 0px;
+
 }
 .divs__detalhes{
-    flex: 0 auto;
-    color: #FFFFFF;
-    width: 52%;
-    height: 100%;
-    padding: 0 3rem 0 0;
+    text-align: center;
 }
 .divs__detalhes h2{
     font-family: Netflix Sans-Medium;
 }
 .divs__titulo{  
-    font-size: 3.125rem;
+    font-size: 25px;
     font-weight: 600;
     margin: 10px 0px;
     
 }
 .divs__sub__titulo{
-    font-size: 1.625rem; 
+    font-size: 15px; 
     font-weight: 400;
 }
 
@@ -253,10 +249,6 @@ header{
     width: 100%;
     
 }
-.divs__backgroud__video__container{
-    position: absolute;
-}
-
 
 .divs__backgroud__video__container{
     position: absolute;
@@ -313,8 +305,7 @@ header{
 .post__detalhes > h5 {
     font-size: 13px;
     font-weight: 500;
-    color: #FFFFFF;
-    
+
 }
 .post__detalhes > h6 {
     font-size: 12px;
@@ -336,16 +327,15 @@ footer {
     padding: 2rem 1rem;   
     color: #757575;
     gap: 20px;
+
 }
 .footer_site{
     padding-top: 0;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     margin: 0 auto;
-    width: 85%;
-    gap: 20px;
-   
-
+    width: 80%;
+    gap: 10px;
 }
 
 .topo1{
@@ -544,23 +534,23 @@ li a{
     }
     .divs__detalhes{
         text-align: left;
-        padding: 0 10rem;
-        margin-left: 100px;
+
       }
     
     .divs__tittulo {
-        font-size: 50px;
+        font-size: 25px;
+        font-weight: 600;
+        margin: 10px 0;
     }
 
     .divs__sub__titulo {
-        font-size: 25px;
+        font-size: 15px;
+        font-weight: 400;
     }
 
     .divs__img__container {
-        max-width: 500px;
-        margin-right: 200px;
-        margin-left: 200px;
-
+       width: 50%;
+       position: relative;
     }
     .divs__post__container {
         max-width: 20em;
@@ -570,12 +560,13 @@ li a{
     .post__container {
         width: 20%;
     }
+
     .footer_site {
         padding: 2rem 15rem;
         align-items: flex-start;
         text-align: left;
         justify-content: flex-start;
-        
+    
     }
     .topo2{
         justify-content: space-between;
