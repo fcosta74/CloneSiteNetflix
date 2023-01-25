@@ -1,0 +1,611 @@
+@font-face{
+    font-family: Netflix Sans-Black;
+    src: url("font/NetflixSans-Black.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Bold;
+    src: url("font/NetflixSans-Bold.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Medium;
+    src: url("font/NetflixSans-Medium.otf");
+}
+@font-face{
+    font-family: Netflix Sans-Regular;
+    src: url("font/NetflixSans-Regular.otf");
+}
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: white;
+}
+
+.barrasup {
+  top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+  z-index: 0;
+
+} 
+
+.menu{
+    height: 100%;
+    width: 150px;
+  
+}
+.logo {
+    height: 100%;
+    width: 100%;
+
+}
+
+.linguagem_drop_down{
+    background: transparent;
+    border: none;
+    color: white;
+
+}
+.linguagem_drop_down:focus{
+    outline: none;
+}
+.itens{
+    display: flex;
+    gap: 10px;
+}
+.dropdown_container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 120px;
+}
+
+header{
+    background-color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    height: 3.5rem;
+    padding: 4px;
+}
+.acima{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 17px;
+    color: #333333;
+}
+.valor{
+    font-size: 20px;
+    border: #000000;
+    font-weight: 1000;
+}
+.btni{
+    border-style: none;
+    cursor: pointer;
+    color: #0071eb;
+    align-items: center;
+    font-size: 16px;
+    background: transparent;
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+.hero{
+    background-image: url('imagens/fundo.jpeg');
+    width: 100%;
+    height: 80vh;
+
+}
+
+.texto{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 75px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.texto h1{
+    font-family: Netflix Sans-Medium;
+    
+}
+.texto h3{
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    font-family: Netflix Sans-Regular;
+}
+.texto h4{
+    text-align: center;
+    font-size: 19px;
+    padding: 10px;
+    font-family: Netflix Sans-Regular;
+}
+.inp{
+    margin: 30px 5px;
+    float: right;
+    max-width: 100%;
+    height: 40px;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 8rem;
+    padding: auto;
+}
+
+
+.texto h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;  
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+.email{
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;  
+}
+.email-label{
+    color: black;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: rgb(153, 149, 149);
+    transition: 0.5s;
+}
+.email:focus + .email-label{
+    top: 0.2rem;
+    font-size: 10px;
+}
+.email:not(:placeholder-shown) .mail:not(:focus) + .email-label{
+    top: 0.2rem;
+    font-size: 10px;
+}
+.email:focus-visible{
+    outline: none;
+}
+.email:hover{
+    opacity: 0.6;
+}
+.formemail{
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    position: relative;
+}
+.formemail1{
+    background-color: white;
+    width: 75%;
+    height: 50px;
+    position: relative;
+}
+.get_email > h3{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-family: Netflix Sans-Regular;
+}
+.btn2{
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    padding: 0.8rem 1.2rem;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+}
+.btn1{
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    
+}
+.divs{
+    border-top: 8px solid #222;
+    padding: 2rem 1rem;
+    margin-top: 0px;
+}
+.divs__detalhes{
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+}
+.divs__detalhes h2{
+    font-family: Netflix Sans-Medium;
+}
+.divs__titulo{  
+    
+    font-weight: 600;
+    margin: 10px 0px;
+    
+}
+.divs__sub__titulo{
+    font-weight: 400;
+}
+
+.divs__img__container{
+    position: relative;
+    width: 100%;   
+}
+
+.divs__img{
+    width: 100%;
+}
+.divs__backgroud__video{
+    width: 100%;
+    
+}
+.divs__backgroud__video__container{
+    position: absolute;
+}
+
+
+.divs__backgroud__video__container{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+}
+
+
+.divs__2__backgroud__video__container{
+    position: absolute;
+    width: 100%;
+    top: 34%;
+    left: 50%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2; 
+    transform: translate(-50%,-50%);
+}
+.divs__2__backgroud__video{
+    width: 100%;
+}
+.divs__post__container {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 16em;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 60px;
+    padding: 0.25rem 0.6rem;
+    gap: 15px;
+}
+.post__container{
+    width: 20%;
+}
+.post {
+    width: 100%;
+    height: 100%;
+}
+.post__detalhes {
+    width: 60%;
+}
+.post__detalhes > h5 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #FFFFFF;
+    
+}
+.post__detalhes > h6 {
+    font-size: 12px;
+    color: rgb(63, 63, 246);
+    font-weight: 400;
+}
+.download_container {
+    width: 20%;
+    height: 100%;
+    
+}
+.gif {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    border-top: 8px solid #222;
+    padding: 2rem 1rem;   
+    color: #757575;
+    gap: 20px;
+}
+.footer_site{
+    padding-top: 0;
+    margin: 0 auto;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    gap: 20px;
+}
+
+.topo1{
+    font-size: 1rem; 
+    font-weight: 400;
+    flex-wrap: wrap;
+    gap: 20px;   
+    color: #737373; 
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  
+}
+
+.topo1-a {
+    color: #737373;
+    font-size: 1rem;
+    
+}
+.topo2{
+    font-size: 0.8rem;
+    color: #737373;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.topo4{
+    margin-top: 1rem;
+}
+li{
+    line-height: 1.9;
+    list-style-type: none;
+}
+li a{
+    color: #737373;
+    text-decoration: none;
+}
+
+.topo3 > .dropdown_container {
+    width: fit-content;
+    border: 1px solid #757575; 
+    color: #757575;
+    cursor: pointer;
+}
+
+
+.topo3 > .dropdown_container > .linguagem_drop_down {
+    color: #757575;
+   
+}
+
+.acordo{
+    width: 100%;
+    
+}
+.list_container{
+    border-top: 8px solid #222;
+    padding: 1rem 0;
+    
+}
+.cabeça {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-family: Netflix Sans-Regular;
+    font-weight: 800;
+
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+    gap: 10px;
+}
+.quest{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+}
+.visib{
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.visib > p{
+    margin: 1rem;
+}
+.get_email{
+    text-align: center;
+}
+.email_form{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+@media (min-width: 768px) {
+    .texto h1{
+        font-size: 1.325rem;
+    }
+    .divs{
+        padding: 45px;
+    }
+    .divs__title {
+        font-size: 35px;
+    }
+    btn1{
+        padding: 10px 20px;
+        font-size: 18px; 
+
+    }
+    .divs__sub__title {
+        font-size: 20px;
+    }
+    .divs__post__container {
+        max-width: 26em;
+        height: 85px;
+    }
+    .post__container {
+        width: 15%;
+    }
+    .download__container {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .post__detalhes > h5 {
+        font-size: 18px;
+    }
+    .post__detalhes > h6 {
+        font-size: 14px;
+    }
+    .quest{
+        font-size: px;
+    }
+
+    .list{
+        padding: 1rem 5rem;
+    }
+    .get_email{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(15%);
+    }
+}
+@media (min-width: 800px){
+    .texto h1{
+        font-size: 4rem;
+    }
+    .divs {
+        padding: 2rem;
+    }
+    .banner{
+        top: 50%;
+        left: 50%;
+    }
+    .barrasup{
+        padding: 2% 5%
+    }
+    .menu{
+        width: 150px;
+    }
+    .form{
+        flex-direction: row;
+        align-items: center;
+        gap: 1px;  
+    }
+    .formemail{
+        width: 75%;
+    }
+    .formemail1{
+        width: 75%;
+    }
+    .itens{
+        gap: 30px;
+    }
+    .btn2{
+        height: 50px;
+    }
+    .dropdown_container{
+        padding: 10px 5px;
+    }
+    .divs {
+        display: flex;
+        align-items: center;
+
+    }
+    .divs__detalhes{
+        text-align: left;
+        margin-left: 100px;
+      }
+    
+    .divs__tittulo {
+        font-size: 50px;
+    }
+
+    .divs__sub__titulo {
+        font-size: 25px;
+    }
+
+    .divs__img__container {
+        max-width: 400px;
+        margin-right: 200px;
+
+    }
+    .divs__post__container {
+        max-width: 20em;
+        height: 100px;
+        padding: 1rem;
+    }
+    .post__container {
+        width: 20%;
+    }
+    .footer_site {
+        padding: 5rem 15rem;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: flex-start;
+        
+    }
+    .topo2{
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        font-size: 10px;
+    }
+    .topo1,
+    .topo3,
+    .topo4 {
+        align-self: flex-start;
+    }
+    .list{
+        padding: 1rem 15rem;
+    }
+    .cabeça{
+        font-weight: 800;
+    }
+    .get_email{
+        transform: translateX(16%);
+    }
+    main section.servicos .container {
+        grid-template-columns: 1fr;
+    }
+
+ 
+}
+@media (min-width: 1254px){
+
+}
