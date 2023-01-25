@@ -114,7 +114,7 @@ header{
     letter-spacing: 1px;
     font-weight: 100;
 }
-.texto h1{
+.texto {
     font-family: Netflix Sans-Medium;
     
 }
@@ -506,7 +506,7 @@ li a{
 }
 @media (min-width: 1024px) {
     .texto h1{
-        font-size: 4rem;
+        font-size: 3.125rem;
         font-weight: 400;
     }
     .texo h4{
